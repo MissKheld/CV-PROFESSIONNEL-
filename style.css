@@ -1,0 +1,179 @@
+body {
+  margin: 0;
+  padding: 0;
+  margin-top: 60px;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: Center;
+  padding: 10px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+.logo img {
+  height: 125px; 
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-left: 20px; 
+}
+
+nav li a {
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+}
+
+nav li a:hover,
+nav li a:focus {
+  background-color: coral;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+span{
+  color: coral;
+
+
+}
+
+.first-section {
+  display: flex;
+  align-items: center;
+}
+
+.image-container {
+  width: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container img {
+  width: 100%;
+  display: block;
+}
+
+.image-border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background-color: coral;
+}
+
+.content-container {
+  width: 50%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+
+.blog-section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.blog-item {
+  border:   0px solid coral;
+  padding: 20px;
+  text-align: center;
+}
+
+.blog-item img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border: 0px solid coral;
+  border-bottom: 5px solid coral;
+}
+
+.blog-item h2 {
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+h1 {
+  font-size: 50px; 
+  text-align: center;
+  color: #888; 
+}
+
+h3 {
+  font-size: 24px; 
+  text-align: center;
+  color: black; 
+}
+
+.third-section {
+  display: flex;
+}
+
+.contact-info {
+  flex: 1;
+  padding: 30px;
+}
+
+
+.social-icons {
+  display: flex;
+  align-items: left;
+  justify-content: center;
+}
+
+.contact-form {
+  flex: 1;
+  padding: 50px;
+  align-items: right;
+}
+
+.champ textarea {
+  width: 100%;
+  height: 70px;
+  resize: none;
+  margin-bottom: 10px;
+}
+
+.champ input[type="submit"] {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: 10px;
+  border-color: Coral;
+  border-radius: 2%;
+  cursor: pointer;
+}
+
+footer {
+  background-color: black;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+footer p {
+  color: #555;
+}
